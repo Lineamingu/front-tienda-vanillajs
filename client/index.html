@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.discordapp.com/attachments/774884412424323114/1040368922425311282/Paomedia-Small-N-Flat-Shop.ico"
+                    alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Tienda Online
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" name="snack" id="5" href="#"
+                            onclick="getProductsById(id)">Snacks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bebidas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" name="bebidag" id="4" href="#"
+                                    onclick="getProductsById(id)">Bebidas Gaseosas</a></li>
+                            <li><a class="dropdown-item" name="bebidae" id="1" href="#"
+                                    onclick="getProductsById(id)">Bebidas Energéticas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bebidas Alcohólicas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" name="pisco" id="2" href="#"
+                                    onclick="getProductsById(id)">Pisco</a></li>
+                            <li><a class="dropdown-item" name="ron" id="3" href="#"
+                                    onclick="getProductsById(id)">Ron</a></li>
+                            <li><a class="dropdown-item" name="vodka" id="7" href="#"
+                                    onclick="getProductsById(id)">Vodka</a></li>
+                            <li><a class="dropdown-item" name="cerveza" id="6" href="#"
+                                    onclick="getProductsById(id)">Cerveza</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca un producto"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="data">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
