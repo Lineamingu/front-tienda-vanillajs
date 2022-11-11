@@ -29,8 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" name="snack" id="5" href="#"
-                            onclick="getProductsById(id)">Snacks</a>
+                        <a class="nav-link" aria-current="page" id="5" href="#" onclick="getProductsById(id)">Snacks</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -38,10 +37,10 @@
                             Bebidas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" name="bebidag" id="4" href="#"
-                                    onclick="getProductsById(id)">Bebidas Gaseosas</a></li>
-                            <li><a class="dropdown-item" name="bebidae" id="1" href="#"
-                                    onclick="getProductsById(id)">Bebidas Energéticas</a></li>
+                            <li><a class="dropdown-item" id="4" href="#" onclick="getProductsById(id)">Bebidas
+                                    Gaseosas</a></li>
+                            <li><a class="dropdown-item" id="1" href="#" onclick="getProductsById(id)">Bebidas
+                                    Energéticas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -50,21 +49,17 @@
                             Bebidas Alcohólicas
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" name="pisco" id="2" href="#"
-                                    onclick="getProductsById(id)">Pisco</a></li>
-                            <li><a class="dropdown-item" name="ron" id="3" href="#"
-                                    onclick="getProductsById(id)">Ron</a></li>
-                            <li><a class="dropdown-item" name="vodka" id="7" href="#"
-                                    onclick="getProductsById(id)">Vodka</a></li>
-                            <li><a class="dropdown-item" name="cerveza" id="6" href="#"
-                                    onclick="getProductsById(id)">Cerveza</a></li>
+                            <li><a class="dropdown-item" id="2" href="#" onclick="getProductsById(id)">Pisco</a></li>
+                            <li><a class="dropdown-item" id="3" href="#" onclick="getProductsById(id)">Ron</a></li>
+                            <li><a class="dropdown-item" id="7" href="#" onclick="getProductsById(id)">Vodka</a></li>
+                            <li><a class="dropdown-item" id="6" href="#" onclick="getProductsById(id)">Cerveza</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Busca un producto"
-                        aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search"
+                        id="busqueda" />
+                    <button class="btn btn-outline-success" type="submit" onclick="searchProduct()">Buscar</button>
                 </form>
             </div>
         </div>

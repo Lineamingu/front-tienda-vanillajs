@@ -14,3 +14,9 @@
     color: #ffffff;
     border-color: #6ac199;
 }
+
+.container-fluid {
+    display: -webkit-box;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+}
