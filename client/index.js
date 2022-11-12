@@ -1,5 +1,5 @@
 const getProductsById = (id) => {
-  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com:3000/products/${id}`;
+  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com/products/${id}`;
   fetch(endpoint)
     .then((respuesta) => respuesta.json())
     .then((datos) => mostrarData(datos))
@@ -8,7 +8,7 @@ const getProductsById = (id) => {
 
 const searchProduct = () => {
   search = document.getElementById("busqueda").value;
-  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com:3000/product-search/${search}`;
+  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com/product-search/${search}`;
   fetch(endpoint)
     .then((respuesta) => respuesta.json())
     .then((datos) => mostrarData(datos))
