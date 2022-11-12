@@ -1,5 +1,5 @@
 const getProductsById = (id) => {
-  let endpoint = `http://192.168.100.2:3000/products/${id}`;
+  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com:3000/products/${id}`;
   fetch(endpoint)
     .then((respuesta) => respuesta.json())
     .then((datos) => mostrarData(datos))
@@ -8,7 +8,7 @@ const getProductsById = (id) => {
 
 const searchProduct = () => {
   search = document.getElementById("busqueda").value;
-  let endpoint = `http://192.168.100.2:3000/product-search/${search}`;
+  let endpoint = `http://ec2-54-82-194-198.compute-1.amazonaws.com:3000/product-search/${search}`;
   fetch(endpoint)
     .then((respuesta) => respuesta.json())
     .then((datos) => mostrarData(datos))
@@ -16,6 +16,7 @@ const searchProduct = () => {
 };
 
 const mostrarData = (data) => {
+  console.log(data);
   let body = "";
   for (let i = 0; i < data.length; i++) {
     body += `<div class="card" style="width: 20%; margin: 0.5%">
